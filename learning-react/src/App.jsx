@@ -2,13 +2,20 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
+
+  // here counter is variable name and setCounter is method name
+  const [counter,setCounter]=useState(0)
   
-  let counter=15
+
 
   const addvalue=()=>{
-    counter=counter+1
-    console.log(counter);
-    
+    if(counter<5){
+    setCounter(counter+1)}
+  }
+
+  const decValue=()=>{
+    if(counter>0){
+    setCounter(counter-1)}
   }
   return (
     <>
@@ -17,7 +24,7 @@ function App() {
       <button
       onClick={addvalue}
       >Add Value</button>{" "}
-      <button>Remove Value</button>
+      <button onClick={decValue}>Remove Value</button>
       <p>Footer: {counter}</p>
     </>
   )
