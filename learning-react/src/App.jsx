@@ -4,7 +4,7 @@ import './App.css'
 function App() {
 
   // here counter is variable name and setCounter is method name
-  const [counter,setCounter]=useState(0)
+  const [counter,setCounter]=useState(1)
   
 
 
