@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
@@ -9,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1 className='bg-red-200'>Hello</h1>
+      <h1>hey</h1>
     </>
   )
 }
